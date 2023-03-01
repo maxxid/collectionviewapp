@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:segmented="clr-namespace:Plugin.Segmented.Control;assembly=Plugin.Segmented"
+             xmlns:system="clr-namespace:System;assembly=netstandard"
+             xmlns:control="clr-namespace:Plugin.Segmented.Control;assembly=Plugin.Segmented"
+             x:Class="CollectionViewApp.MainPage">
+
+        <CollectionView ItemsSource="{Binding Products}"
+                        EmptyView="No hay items para mostrar"
+                        BackgroundColor="#1e2838">
+            <CollectionView.ItemsLayout>
+                <LinearItemsLayout Orientation="Vertical"    
+                                 
+                                   ItemSpacing="0"/>
+            </CollectionView.ItemsLayout>
+        <CollectionView.ItemTemplate >
+               <DataTemplate >
+                    <StackLayout>
+                    <Frame Margin="10"
+                           Padding="5"
+                           CornerRadius="0"
+                           BackgroundColor="#1e2838"
+                           IsClippedToBounds="False"
+                           HasShadow="False">
+
+                        <Grid HeightRequest="50"
+                              BackgroundColor="Transparent"
+                              >
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width=".3*"/>
+                                <ColumnDefinition Width=".4*"/>
+                                <ColumnDefinition Width=".3*"/>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height=".5*"/>
+                                <RowDefinition Height=".5*"/>
+                            </Grid.RowDefinitions>
+                            <Label Grid.Row="0" Grid.Column="1" Text="{Binding Name}" TextColor="AliceBlue" FontAttributes="Bold" FontSize="Medium"/>
+                            <Label Grid.Row="1" Grid.Column="1" Text="{Binding Price}" TextColor="AliceBlue"/>
+                            <Image Grid.RowSpan="2" Grid.Column="0" Source="{Binding Image}" HorizontalOptions="Start"/>
+
+
+                            <control:SegmentedControl Grid.Column="3" Grid.RowSpan="2" WidthRequest="120" TintColor="#0B78FF"      
+                                                      BorderWidth="2.0"
+                                                      FontSize="Small"   DisabledColor="GreenYellow"
+                                                      VerticalOptions="Center"
+                            >
+                                <control:SegmentedControl.Children>
+                                    <segmented:SegmentedControlOption Text="PRESENTE"/>
+                                    <segmented:SegmentedControlOption Text="AUSENTE"/>
+                                </control:SegmentedControl.Children>
+
+                            </control:SegmentedControl>
+
+
+                        </Grid>
+
+
+                    </Frame>
+                    <BoxView Color="#454D59" VerticalOptions="Center" HeightRequest="1" BackgroundColor="#454D59"></BoxView>
+                </StackLayout>
+                   
+
+                    </DataTemplate>
+           </CollectionView.ItemTemplate>
+          
+        </CollectionView>
+
+
+</ContentPage>

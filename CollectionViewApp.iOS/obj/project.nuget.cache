@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "kC4yNhX5vf7ojBhCzw3LhcHZUp8qzINEN8Qwd694hSHT30vGSW2bWLZqNyJUgs2kI07NnHSLwWrjrsoUe3l/7w==",
+  "success": true,
+  "projectFilePath": "E:\\DEVMOBILE\\CollectionViewApp\\CollectionViewApp\\CollectionViewApp.iOS\\CollectionViewApp.iOS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\MAXI\\.nuget\\packages\\plugin.segmentedcontrol.netstandard\\5.4.5\\plugin.segmentedcontrol.netstandard.5.4.5.nupkg.sha512",
+    "C:\\Users\\MAXI\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\MAXI\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
+    "C:\\Users\\MAXI\\.nuget\\packages\\xamarin.forms\\5.0.0.2196\\xamarin.forms.5.0.0.2196.nupkg.sha512"
+  ],
+  "logs": []
+}

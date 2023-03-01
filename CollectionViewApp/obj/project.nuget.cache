@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "YkmL0sBAA45g1+8o476WNQTQyygUx2EnH4WVJFSAmPHxXJ8cAYziA0sej7qWruFVPtnW7jCp12kZu0ALnfg1qQ==",
+  "success": true,
+  "projectFilePath": "E:\\DEVMOBILE\\CollectionViewApp\\CollectionViewApp\\CollectionViewApp\\CollectionViewApp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\MAXI\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\MAXI\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\MAXI\\.nuget\\packages\\plugin.segmentedcontrol.netstandard\\5.4.5\\plugin.segmentedcontrol.netstandard.5.4.5.nupkg.sha512",
+    "C:\\Users\\MAXI\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\MAXI\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
+    "C:\\Users\\MAXI\\.nuget\\packages\\xamarin.forms\\5.0.0.2196\\xamarin.forms.5.0.0.2196.nupkg.sha512"
+  ],
+  "logs": []
+}
