@@ -43,7 +43,9 @@
 
                             <control:SegmentedControl Grid.Column="3" Grid.RowSpan="2" WidthRequest="120" TintColor="#0B78FF"      
                                                       BorderWidth="2.0"
-                                                      FontSize="Small"   DisabledColor="GreenYellow"
+                                                      SelectedTextColor="White"
+                                                      TextColor="#0B78FF"
+                                                      FontSize="Small"   
                                                       VerticalOptions="Center"
                             >
                                 <control:SegmentedControl.Children>
