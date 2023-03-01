@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CollectionViewApp.Views.Piedepagina">
+
+    <Frame CornerRadius="15" 
+           HorizontalOptions="Center" 
+           VerticalOptions="End"
+           HasShadow="True"
+           IsClippedToBounds="True"
+           Padding="15,10,15,5"
+           BackgroundColor="#0B759F"
+           Margin="0,0,0,15">
+        <Grid 
+            VerticalOptions="End"
+            HeightRequest="80"
+            BackgroundColor="#0B759F">
+
+            <Frame HorizontalOptions="Center"
+               HeightRequest="45"
+               WidthRequest="45"
+               VerticalOptions="Center"
+               CornerRadius="60"
+               TranslationY="-10"
+               TranslationX="5"
+               BackgroundColor="#3094FF">
+                <Frame.Background>
+                    <LinearGradientBrush EndPoint="0,5">
+                        <GradientStop Color="Transparent"
+                              Offset="0.1" />
+                        <GradientStop Color="#152124"
+                            Offset="1.1" />
+                    </LinearGradientBrush>
+                </Frame.Background>
+                <Image Source="icon1.png"
+                    HeightRequest="15"/>
+            </Frame>
+            <StackLayout Orientation="Horizontal"
+                     Margin="0,0"
+                     Spacing="29"
+                     HorizontalOptions="CenterAndExpand"
+
+                     >
+                <StackLayout
+                    VerticalOptions="CenterAndExpand">
+                    <Image Source="iconAlumnos.png"
+                   HeightRequest="25"
+                   />
+                    <Label Text="Alumnos" FontSize="11" TextColor="White"></Label>
+                </StackLayout>
+                <StackLayout
+                    VerticalOptions="CenterAndExpand"
+                    Margin="0"
+                    Padding="0">
+                    <Image Source="iconEstadistica"
+                       HeightRequest="25" />
+                    <Label Text="Informes" FontSize="11" TextColor="White"></Label>
+                </StackLayout>
+
+
+                <BoxView BackgroundColor="Transparent"
+                     HorizontalOptions="Center"
+                     />
+
+                <StackLayout
+                    VerticalOptions="CenterAndExpand"
+                    Margin="0"
+                    Padding="0">
+                    <Image Source="carpetaswhiteICON2.png"
+                   HeightRequest="25" />
+                    <Label Text="Cursos" FontSize="11" TextColor="White"></Label>
+                </StackLayout>
+
+                <StackLayout
+                    VerticalOptions="CenterAndExpand"
+                    Margin="0"
+                    Padding="0">
+                    <Image Source="iconConfiguracion.png"
+                   HeightRequest="25" />
+                    <Label Text="Ajustes" FontSize="11" TextColor="White"></Label>
+                </StackLayout>
+
+
+            </StackLayout>
+        </Grid>
+
+    </Frame>
+</ContentView>

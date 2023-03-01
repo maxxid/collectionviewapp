@@ -28,3 +28,4 @@ E:\DEVMOBILE\CollectionViewApp\CollectionViewApp\CollectionViewApp\obj\Debug\net
 E:\DEVMOBILE\CollectionViewApp\CollectionViewApp\CollectionViewApp\obj\Debug\netstandard2.0\refint\CollectionViewApp.dll
 E:\DEVMOBILE\CollectionViewApp\CollectionViewApp\CollectionViewApp\obj\Debug\netstandard2.0\CollectionViewApp.pdb
 E:\DEVMOBILE\CollectionViewApp\CollectionViewApp\CollectionViewApp\obj\Debug\netstandard2.0\ref\CollectionViewApp.dll
+E:\DEVMOBILE\CollectionViewApp\CollectionViewApp\CollectionViewApp\obj\Debug\netstandard2.0\Views\Piedepagina.xaml.g.cs

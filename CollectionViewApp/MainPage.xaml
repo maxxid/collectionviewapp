@@ -4,70 +4,86 @@
              xmlns:segmented="clr-namespace:Plugin.Segmented.Control;assembly=Plugin.Segmented"
              xmlns:system="clr-namespace:System;assembly=netstandard"
              xmlns:control="clr-namespace:Plugin.Segmented.Control;assembly=Plugin.Segmented"
+             xmlns:views="clr-namespace:CollectionViewApp.Views;assembly=CollectionViewApp"
              x:Class="CollectionViewApp.MainPage">
+    
 
-        <CollectionView ItemsSource="{Binding Products}"
-                        EmptyView="No hay items para mostrar"
-                        BackgroundColor="#1e2838">
+        <Grid
+            BackgroundColor="#1e2838">
+            <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+            <CollectionView ItemsSource="{Binding Products}"
+                            EmptyView="No hay items para mostrar"
+                            BackgroundColor="#1e2838"
+                            Grid.Row="0">
             <CollectionView.ItemsLayout>
                 <LinearItemsLayout Orientation="Vertical"    
                                  
                                    ItemSpacing="0"/>
             </CollectionView.ItemsLayout>
-        <CollectionView.ItemTemplate >
-               <DataTemplate >
+            <CollectionView.ItemTemplate >
+                <DataTemplate >
                     <StackLayout>
-                    <Frame Margin="10"
+                        <Frame Margin="10"
                            Padding="5"
                            CornerRadius="0"
                            BackgroundColor="#1e2838"
                            IsClippedToBounds="False"
                            HasShadow="False">
 
-                        <Grid HeightRequest="50"
+                            <Grid HeightRequest="50"
                               BackgroundColor="Transparent"
                               >
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width=".3*"/>
-                                <ColumnDefinition Width=".4*"/>
-                                <ColumnDefinition Width=".3*"/>
-                            </Grid.ColumnDefinitions>
-                            <Grid.RowDefinitions>
-                                <RowDefinition Height=".5*"/>
-                                <RowDefinition Height=".5*"/>
-                            </Grid.RowDefinitions>
-                            <Label Grid.Row="0" Grid.Column="1" Text="{Binding Name}" TextColor="AliceBlue" FontAttributes="Bold" FontSize="Medium"/>
-                            <Label Grid.Row="1" Grid.Column="1" Text="{Binding Price}" TextColor="AliceBlue"/>
-                            <Image Grid.RowSpan="2" Grid.Column="0" Source="{Binding Image}" HorizontalOptions="Start"/>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width=".3*"/>
+                                    <ColumnDefinition Width=".4*"/>
+                                    <ColumnDefinition Width=".3*"/>
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height=".5*"/>
+                                    <RowDefinition Height=".5*"/>
+                                </Grid.RowDefinitions>
+                                <Label Grid.Row="0" Grid.Column="1" Text="{Binding Name}" TextColor="AliceBlue" FontAttributes="Bold" FontSize="Medium"/>
+                                <Label Grid.Row="1" Grid.Column="1" Text="{Binding Price}" TextColor="AliceBlue"/>
+                                <Image Grid.RowSpan="2" Grid.Column="0" Source="{Binding Image}" HorizontalOptions="Start"/>
 
 
-                            <control:SegmentedControl Grid.Column="3" Grid.RowSpan="2" WidthRequest="120" TintColor="#0B78FF"      
+                                <control:SegmentedControl Grid.Column="3" Grid.RowSpan="2" WidthRequest="120" TintColor="#0B78FF"      
                                                       BorderWidth="2.0"
                                                       SelectedTextColor="White"
                                                       TextColor="#0B78FF"
                                                       FontSize="Small"   
                                                       VerticalOptions="Center"
                             >
-                                <control:SegmentedControl.Children>
-                                    <segmented:SegmentedControlOption Text="PRESENTE"/>
-                                    <segmented:SegmentedControlOption Text="AUSENTE"/>
-                                </control:SegmentedControl.Children>
+                                    <control:SegmentedControl.Children>
+                                        <segmented:SegmentedControlOption Text="PRESENTE"/>
+                                        <segmented:SegmentedControlOption Text="AUSENTE"/>
+                                    </control:SegmentedControl.Children>
 
-                            </control:SegmentedControl>
-
-
-                        </Grid>
+                                </control:SegmentedControl>
 
 
-                    </Frame>
-                    <BoxView Color="#454D59" VerticalOptions="Center" HeightRequest="1" BackgroundColor="#454D59"></BoxView>
-                </StackLayout>
-                   
+                            </Grid>
 
-                    </DataTemplate>
-           </CollectionView.ItemTemplate>
-          
+
+                        </Frame>
+                        <BoxView Color="#454D59" VerticalOptions="Center" HeightRequest="1" BackgroundColor="#454D59"></BoxView>
+                    </StackLayout>
+
+
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+
         </CollectionView>
 
+        <views:Piedepagina Grid.Row="1"/>
 
+
+
+    </Grid>
+
+        
 </ContentPage>
