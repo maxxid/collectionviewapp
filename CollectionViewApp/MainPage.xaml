@@ -46,9 +46,9 @@
                                     <RowDefinition Height=".5*"/>
                                     <RowDefinition Height=".5*"/>
                                 </Grid.RowDefinitions>
-                                <Label Grid.Row="0" Grid.Column="1" Text="{Binding Name}" TextColor="AliceBlue" FontAttributes="Bold" FontSize="Medium"/>
-                                <Label Grid.Row="1" Grid.Column="1" Text="{Binding Price}" TextColor="AliceBlue"/>
-                                <Image Grid.RowSpan="2" Grid.Column="0" Source="{Binding Image}" HorizontalOptions="Start"/>
+                                <Label Grid.Row="0" Grid.Column="1" Text="{Binding Apellido}" TextColor="AliceBlue" FontAttributes="Bold" FontSize="Medium"/>
+                                <Label Grid.Row="1" Grid.Column="1" Text="{Binding Nombre}" TextColor="AliceBlue"/>
+                                <Image Grid.RowSpan="2" Grid.Column="0" Source="{Binding Imagen}" HorizontalOptions="Start"/>
 
 
                                 <control:SegmentedControl Grid.Column="3" Grid.RowSpan="2" WidthRequest="120" TintColor="#0B78FF"      

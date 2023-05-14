@@ -1286,3 +1286,6 @@ E:\DEVMOBILE\CollectionViewApp\CollectionViewApp\CollectionViewApp.Android\obj\D
 E:\DEVMOBILE\CollectionViewApp\CollectionViewApp\CollectionViewApp.Android\obj\Debug\130\android\src\crc647f25f480157a6a21\SegmentedControlRenderer.java
 E:\DEVMOBILE\CollectionViewApp\CollectionViewApp\CollectionViewApp.Android\obj\Debug\130\android\src\mono\androidx\mediarouter\media\RemotePlaybackClient_OnMessageReceivedListenerImplementor.java
 E:\DEVMOBILE\CollectionViewApp\CollectionViewApp\CollectionViewApp.Android\obj\Debug\130\android\src\mono\androidx\palette\graphics\Palette_PaletteAsyncListenerImplementor.java
+E:\DEVMOBILE\CollectionViewApp\CollectionViewApp\CollectionViewApp.Android\obj\Debug\130\res\drawable\boy.png
+E:\DEVMOBILE\CollectionViewApp\CollectionViewApp\CollectionViewApp.Android\obj\Debug\130\res\drawable\girl.png
+E:\DEVMOBILE\CollectionViewApp\CollectionViewApp\CollectionViewApp.Android\obj\Debug\130\res\drawable\alumiconwhite.png
